@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>ITRex test</title>
+    <link rel="stylesheet" href="./assets/libs/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="./assets/libs/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <h1>Domino</h1>
+        </header>
+
+        <main class="content">
+            <div class="domino-main">
+                <div class="domino__nav">
+                    <button class="domino__left nav__btn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64" width="100%" height="100%">
+                            <path fill="#1D1D1B" d="m63.386,16.193l.002-.002c0.002-0.003 0.004-0.006 0.006-0.01 0.172-0.195 0.298-0.43 0.399-0.678 0.032-0.076 0.053-0.148 0.076-0.225 0.058-0.191 0.094-0.389 0.106-0.596 0.006-0.076 0.018-0.148 0.016-0.226 0-0.04 0.01-0.076 0.008-0.115-0.014-0.239-0.062-0.47-0.136-0.687-0.006-0.023-0.022-0.041-0.03-0.064-0.088-0.239-0.214-0.451-0.363-0.645-0.021-0.027-0.028-0.063-0.05-0.09l-10.311-12.146c-0.789-0.93-2.084-0.948-2.894-0.037-0.808,0.91-0.823,2.402-0.032,3.334l5.558,6.549c-8.121-1.076-16.104,0.633-16.481,0.717-24.646,4.467-42.087,27.227-38.88,50.736 0.159,1.164 1.028,1.992 2.019,1.992 0.106,0 0.212-0.009 0.32-0.027 1.116-0.203 1.878-1.409 1.704-2.696-2.857-20.94 13.056-41.282 35.537-45.358 0.103-0.024 8.351-1.794 16.117-0.574l-8.577,5.093c-1.005,0.598-1.398,2.02-0.881,3.177 0.516,1.159 1.748,1.608 2.756,1.017l13.52-8.028c0.183-0.111 0.347-0.25 0.491-0.411z"/>
+                        </svg>
+                    </button>
+                    <button class="domino__new nav__btn">New</button>
+                    <button class="domino__right nav__btn">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64" width="100%" height="100%">
+                            <path fill="#1D1D1B" d="m63.386,16.193l.002-.002c0.002-0.003 0.004-0.006 0.006-0.01 0.172-0.195 0.298-0.43 0.399-0.678 0.032-0.076 0.053-0.148 0.076-0.225 0.058-0.191 0.094-0.389 0.106-0.596 0.006-0.076 0.018-0.148 0.016-0.226 0-0.04 0.01-0.076 0.008-0.115-0.014-0.239-0.062-0.47-0.136-0.687-0.006-0.023-0.022-0.041-0.03-0.064-0.088-0.239-0.214-0.451-0.363-0.645-0.021-0.027-0.028-0.063-0.05-0.09l-10.311-12.146c-0.789-0.93-2.084-0.948-2.894-0.037-0.808,0.91-0.823,2.402-0.032,3.334l5.558,6.549c-8.121-1.076-16.104,0.633-16.481,0.717-24.646,4.467-42.087,27.227-38.88,50.736 0.159,1.164 1.028,1.992 2.019,1.992 0.106,0 0.212-0.009 0.32-0.027 1.116-0.203 1.878-1.409 1.704-2.696-2.857-20.94 13.056-41.282 35.537-45.358 0.103-0.024 8.351-1.794 16.117-0.574l-8.577,5.093c-1.005,0.598-1.398,2.02-0.881,3.177 0.516,1.159 1.748,1.608 2.756,1.017l13.52-8.028c0.183-0.111 0.347-0.25 0.491-0.411z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="domino__wrap">
+                    <div class="domino__block">
+                        <div class="domino__bone">
+                            <div class="bone__up bone__half" data-choose="true">
+                                <table class="one">
+                                    <tr>
+                                        <td class="four five six"><span></span></td>
+                                        <td></td>
+                                        <td class="five six four three"><span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="two six"><span></span></td>
+                                        <td class="one three five"><span></span></td>
+                                        <td class="two six"><span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three four five six"><span></span></td>
+                                        <td></td>
+                                        <td class="four five six"><span></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="bone__down bone__half">
+                                <table class="three">
+                                    <tr>
+                                        <td class="four five six"><span></span></td>
+                                        <td></td>
+                                        <td class="three five six four"><span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="two six"><span></span></td>
+                                        <td class="one three five"><span></span></td>
+                                        <td class="two six"><span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="three four five six"><span></span></td>
+                                        <td></td>
+                                        <td class="four five six"><span></span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="domino__controls">
+                        <div class="domino__size">
+                            <label for="domino-size">Size</label>
+                            <div id="domino-size" class="slider-elem"></div>
+                        </div>
+                        <div class="domino__speed">
+                            <label for="domino-speed">Speed</label>
+                            <div id="domino-speed" class="slider-elem"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="domino__choose">
+                    <button class="domino__one domino__btn" data-num="one">
+                        <span></span>
+                    </button>
+                    <button class="domino__two domino__btn" data-num="two">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="domino__three domino__btn" data-num="three">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="domino__four domino__btn" data-num="four">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="domino__five domino__btn" data-num="five">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="domino__six domino__btn" data-num="six">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./assets/libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <script type="text/babel" src="assets/js/script.js"></script>
+</body>
+</html>
