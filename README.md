@@ -1,11 +1,7 @@
 # domino
 
-This project wrote with using jQuery, SCSS, HTML.
-Index.html is main faile for run programm.
-This programm has simple interfase.
+This project was wrіttеn on jQuery, SCSS, HTML and has a simple interface. Index.html is the main file to run.
 
-Short instruction to use application:
+Short instruction of how to use the application:
 
-In top block we look 3 buttons "left", "right" - for rotate domino, "new" - reset settings.
-For asking numbers of bone points, clicks on half of bone and clicks in left menu button with needs number.
-Bottom menu asked speed of rotate and scale and size of bone.
+In the top block we see 3 buttons: "left", "right" - to rotate domino, "new" - to reset settings. To change numbers of bone points, click on a half of a bone and click on left menu button with the needed number. Bottom sliders configure the speed of rotation and scale the size of bone.
